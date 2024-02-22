@@ -17,4 +17,4 @@ jobs:
       - name: Build Docker image
         run: docker build -f Dockerfile-test -t github-actions-test:latest .
       - name: Run Docker image
-        run: docker run -n github-actions-test github-actions-test:latest
+        run: docker run --name github-actions-test github-actions-test:latest
